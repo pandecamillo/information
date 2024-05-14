@@ -1,0 +1,30 @@
+body {
+  font-family: Verdana;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 span {
+  color: rgb(159, 107, 9);
+}
+
+.main-img {
+  width: 100%;
+  max-width: 800px;
+}
+
+.note {
+  background-color: black;
+  color: white;
+  padding: 1em;
+}
