@@ -1,5 +1,5 @@
 body {
-  font-family: Verdana;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
 
@@ -7,11 +7,13 @@ body {
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 2em;
+  padding: 1em;
 }
 
 h1 {
   text-align: center;
+  text-wrap: nowrap;
+  font-size: 1.6rem;
 }
 
 h1 span {
@@ -23,8 +25,52 @@ h1 span {
   max-width: 800px;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(159, 107, 9);
+  border-bottom: 1px black solid;
+}
+
 .note {
   background-color: black;
   color: white;
   padding: 1em;
+}
+
+footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+/* for Computer screens */
+@media screen and (min-width: 768px) {
+  .part1,
+  .part2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+  .part1 > .col1 {
+    width: 30%;
+  }
+
+  .part1 > .col2 {
+    width: 45%;
+  }
+
+  .part1 > .col3 {
+    width: 20%;
+  }
+
+  .part2 > .col1 {
+    width: 60%;
+  }
+
+  .part2 > .col2 {
+    width: 20%;
+  }
 }
